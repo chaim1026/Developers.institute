@@ -1,0 +1,96 @@
+.frow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.fcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-container {
+    justify-content: center;
+}
+
+.column-container {
+    width: 70%;
+}
+
+.left-column {
+    width: 30%;
+    background-color: blue;
+    flex-wrap: wrap;
+}
+
+.right-column {
+    width: 70%;
+    background-color: grey;
+}
+
+.profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.cube {
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.cube-text {
+    color: white;
+}
+
+.icon-table {
+    color: white;
+}
+
+.cube-header {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.icon-table {
+    margin-right: 8px;
+}
+
+.text-table {
+    margin-right: 10px;
+    color: white;
+}
+
+a {
+    color: chartreuse;
+}
+
+.name {
+    font-size: 90px;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.profession {
+    font-size: 25px;
+    margin-right: 15px;
+    width: 30%;
+}
+
+.line {
+    background-color: blue;
+    border: 2px solid blue;
+    width: 70%;
+}
+
+.profession-row {
+    flex-wrap: nowrap;
+    padding: 10px;
+}
