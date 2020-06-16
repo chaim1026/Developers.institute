@@ -94,3 +94,16 @@ a {
     flex-wrap: nowrap;
     padding: 10px;
 }
+
+.fpad {
+    padding: 4px;
+}
+
+.button {
+    background-color: chartreuse;
+    border-radius: 12px;
+}
+
+.center {
+    align-items: center;
+}
