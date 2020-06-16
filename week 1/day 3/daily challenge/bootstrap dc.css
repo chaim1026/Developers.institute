@@ -1,3 +1,7 @@
 .veggie-container {
     padding-top: 30px;
 }
+
+.veggie-pic {
+    max-width: 200px;
+}
