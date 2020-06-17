@@ -1,1 +1,43 @@
-.backgroundpic {}
+body {
+    height: 100vh;
+}
+
+
+.container {
+    height: 100%;
+}
+
+
+#tophalf {
+    height: 50%;
+}
+
+
+#bottomhalf {
+    height: 50%;
+}
+
+
+.navf {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.jumbotron {
+    background: url(ocean.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+p {
+    color: white;
+}
+
+
+td {
+    text-align: center;
+}
