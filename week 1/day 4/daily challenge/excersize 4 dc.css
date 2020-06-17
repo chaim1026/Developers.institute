@@ -1,0 +1,43 @@
+#container {
+    height: 100vh;
+}
+
+
+
+#wrapper {
+    border: 2px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#top {
+    background-color: lightblue;
+    height: 30%;
+    width: 80%;
+}
+
+#middle {
+    background-color: lightblue;
+    height: 30%;
+    width: 100%;
+}
+
+
+#bottom {
+    background-color: lightblue;
+    height: 30%;
+    width: 80%;
+}
+
+
+.movetxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
