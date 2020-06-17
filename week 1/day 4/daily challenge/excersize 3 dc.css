@@ -1,0 +1,36 @@
+#container {
+    height: 100vh;
+}
+
+#wrapper {
+    border: 2px solid salmon;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#left {
+    width: 20%;
+    background-color: palevioletred;
+}
+
+#middle {
+    width: 40%;
+    background-color: lightblue;
+}
+
+#right {
+    width: 40%;
+    background-color: red;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
