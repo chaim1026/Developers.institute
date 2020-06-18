@@ -8,30 +8,33 @@ body {
     height: 100vh;
     border: 2px solid black;
     display: grid;
-    grid-template-areas:
+    /* grid-template-areas:
         "left right right right"
         "left right right right"
         "left right right right"
         "bottom bottom bottom bottom";
     grid-gap: 10px;
-    padding: 5px;
+    padding: 5px; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
 }
 
 
-
-.pink {
+#pink {
     background-color: pink;
-    grid-area: left;
+    grid-column: 1/2;
+    margin: 15px;
 }
 
-
-.lightblue {
-    background-color: lightblue;
-    grid-area: right;
+#blue {
+    background-color: blue;
+    grid-column: 2/5;
+    margin: 15px;
 }
 
-
-.yellow {
+#yellow {
     background-color: yellow;
-    grid-area: bottom;
+    grid-column: 1/8;
+    margin: 15px;
 }
