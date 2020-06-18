@@ -17,6 +17,7 @@ body {
         "relatedimages relatedimages relatedimages relatedimages relatedimages relatedpost relatedpost"
         "relatedimages relatedimages relatedimages relatedimages relatedimages relatedpost relatedpost"
         "footer footer footer footer footer footer footer";
+    grid-gap: 5px;
 }
 
 #lightblue {
@@ -57,4 +58,9 @@ body {
 #yellow {
     background-color: yellow;
     grid-area: footer;
+}
+
+.shapetxt {
+    text-align: center;
+    color: white;
 }
