@@ -1,0 +1,34 @@
+body {
+    height: 100vh;
+}
+
+#wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.yellowbox {
+    background-color: yellow;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
+
+#middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#left {
+    display: grid;
+    justify-content: center;
+}
+
+#right {
+    display: grid;
+    justify-content: center;
+}
