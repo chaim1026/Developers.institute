@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+}
+
+#wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "a a a"
+        "b c d"
+        "b e e"
+        "f f g "
+        "h h h";
+    grid-gap: 5px;
+}
+
+#purple {
+    background-color: purple;
+    grid-area: a;
+}
+
+#grey {
+    background-color: gray;
+    grid-area: b;
+}
+
+#blue {
+    background-color: blue;
+    grid-area: c;
+}
+
+#lightblue {
+    background-color: lightblue;
+    grid-area: d;
+}
+
+#pink {
+    background-color: pink;
+    grid-area: e;
+}
+
+#purple2 {
+    background-color: purple;
+    grid-area: f;
+}
+
+#grey2 {
+    background-color: gray;
+    grid-area: g;
+}
+
+#blue2 {
+    background-color: blue;
+    grid-area: h;
+}
+
+.shapetxt {
+    text-align: center;
+    color: white;
+}
