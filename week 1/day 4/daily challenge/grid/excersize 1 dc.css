@@ -1,0 +1,37 @@
+body {
+    height: 100hv;
+}
+
+
+#wrapper {
+
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas:
+        "left right right right"
+        "left right right right"
+        "left right right right"
+        "bottom bottom bottom bottom";
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+
+
+.pink {
+    background-color: pink;
+    grid-area: left;
+}
+
+
+.lightblue {
+    background-color: lightblue;
+    grid-area: right;
+}
+
+
+.yellow {
+    background-color: yellow;
+    grid-area: bottom;
+}
