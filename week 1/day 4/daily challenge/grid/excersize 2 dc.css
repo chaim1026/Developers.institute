@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+}
+
+#wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header header header header header "
+        "hero hero hero maincontent maincontent maincontent maincontent"
+        "hero hero hero maincontent maincontent maincontent maincontent"
+        "hero hero hero maincontent maincontent maincontent maincontent"
+        "sidebar sidebar sidebar maincontent maincontent maincontent maincontent"
+        "sidebar sidebar sidebar maincontent maincontent maincontent maincontent"
+        "sidebar sidebar sidebar extracontent extracontent extracontent extracontent"
+        "sidebar sidebar sidebar extracontent extracontent extracontent extracontent"
+        "relatedimages relatedimages relatedimages relatedimages relatedimages relatedpost relatedpost"
+        "relatedimages relatedimages relatedimages relatedimages relatedimages relatedpost relatedpost"
+        "footer footer footer footer footer footer footer";
+}
+
+#lightblue {
+    background-color: lightblue;
+    grid-area: header;
+}
+
+#lightgrey {
+    background-color: lightgray;
+    grid-area: hero;
+}
+
+#orange {
+    background-color: orange;
+    grid-area: maincontent;
+}
+
+#green {
+    background-color: green;
+    grid-area: sidebar;
+}
+
+#grey {
+    background-color: grey;
+    grid-area: extracontent;
+}
+
+#purple {
+    background-color: purple;
+    grid-area: relatedimages;
+}
+
+#pink {
+    background-color: pink;
+    grid-area: relatedpost;
+}
+
+#yellow {
+    background-color: yellow;
+    grid-area: footer;
+}
