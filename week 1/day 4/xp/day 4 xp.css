@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    background-image: url(grey_map.svg);
+    background-size: cover;
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#toptxt {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#top {}
+
+
+#mid {
+    display: flex;
+}
+
+
+.a {
+    padding: 100px;
+}
+
+
+.midtxt {
+    color: blue;
+    text-align: center;
+}
+
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.column {
+    height: 250px;
+    padding: 50px;
+}
+
+
+
+.topbox {
+    background-color: white;
+}
+
+
+#lowerleft {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+}
+
+
+#lowermiddle {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+
+#lowerright {
+    background-color: turquoise;
+    color: white;
+    text-align: center;
+}
