@@ -44,7 +44,7 @@ h1 {
 
 
 p {
-    color: darkblue;
+    color: black;
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
@@ -53,4 +53,9 @@ p {
 
 a {
     font-size: 40px;
+}
+
+
+footer {
+    flex-direction: column;
 }
