@@ -1,0 +1,59 @@
+nav {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    margin-top: 10px;
+    margin-right: 150px;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    padding: 8px 28px;
+    cursor: pointer;
+}
+
+h3 {
+    margin-left: 150px;
+}
+
+#picture {
+    background-image: url(images.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+    color: white;
+    margin-top: auto;
+}
+
+form {
+    text-align: center;
+}
+
+#mail {
+    font-size: 25px;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.column {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
