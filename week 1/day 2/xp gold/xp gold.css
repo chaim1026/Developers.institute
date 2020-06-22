@@ -1,0 +1,97 @@
+#wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#left {
+    background-color: rgb(231, 228, 228);
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#firstinput {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#btmform {
+    margin-bottom: 20px;
+}
+
+#checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pass {
+    border: none;
+    background-color: rgb(231, 228, 228);
+    cursor: pointer;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+p span {
+    background: rgb(231, 228, 228);
+    padding: 0 10px;
+}
+
+#login {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 30px;
+    background-color: purple;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 30px
+}
+
+#right {
+    background-color: purple;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#person {
+    font-size: 80px;
+}
+
+#btn {
+    background-color: purple;
+    color: white;
+    border: 1px solid white;
+    border-radius: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
