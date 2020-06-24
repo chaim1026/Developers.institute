@@ -28,30 +28,44 @@
 // excersize 4
 
 // let people = ["Greg", "Mary", "Devon", "James"];
+// for (let i of people) {
+//     console.log(i)
+// }
 // people.shift()
-// people.splice(2, 1, )
-// people.splice(3, 0, "Jason")
+// console.log(people)
+// people.splice(people.indexOf("james"), 1, "Jason")
+// console.log(people)
 // people.push("Chaim")
+// console.log(people)
+// for (i of people) {
+//     console.log(i)
+//     if (i === "Mary") {
+//         break
+//     }
+// }
+// people = people.slice(1, 3)
+// console.log(people)
 // let place = people.indexOf("Mary")
 // console.log(place)
 // let place2 = people.indexOf("Foo")
 // console.log(place2)
 // let last = people[people.length - 1]
 // console.log(last)
-// people = people.slice(1, 3)
-// for (let i of people) {
-//     if (i === "Mary") {
-//         break
-//     }
-//     console.log(i)
-// }
+
 
 
 // excersize 5
 
-let age = [20, 5, 12, 43, 98, 55]
+// let age = [20, 5, 12, 43, 98, 55]
+// let sum = 0
+// for (var i = 0; i < age.length; i++) {
+//     sum = sum + parseInt(age[i])
+// }
+// console.log(sum)
+
+let age = [20, 5, 12, 43, 98, 55];
 let sum = 0
-for (var i = 0; i < age.length; i++) {
-    sum = sum + parseInt(age[i])
+for (sum of age) {
+    sum = sum + parseInt(sum)
 }
 console.log(sum)
