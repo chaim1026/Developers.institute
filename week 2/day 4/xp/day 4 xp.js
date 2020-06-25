@@ -88,62 +88,50 @@
 // let sum_of_prices = 0
 
 // function my_bill() {
-//     for (let item of shopping_list) {
+//     for (item of shopping_list) {
 //         if (stock[item] > 0) {
-//             sum_of_prices += parseFloat(prices[item])
+//             sum_of_prices += prices[item]
 //         }
 //     }
 //     return sum_of_prices
 // }
 // console.log(my_bill())
 
+
 // excersize 5
 
 function hotel_cost() {
-    let nights = prompt("how many night would you like to stay at the hotel")
-    let payment = Number(nights) * 140
-    console.log(payment)
-    return (payment)
+    let nights = prompt("How many night would you like to stay in the hotel?")
+    let cost = Number(nights) * 140
+    return cost
 }
-// hotel_cost()
 
-let destination = {
+let places = {
     "london": 183,
     "paris": 220,
+    "other": 300
 }
 
 function plane_ride_cost() {
-    let user_destination = prompt("what is your destination")
-    if (destination[user_destination]) {
-        console.log(destination[user_destination])
-        return (destination[user_destination])
+    let destination = prompt("What is your destination?")
+    if (places[destination]) {
+        return places[destination]
     } else {
-        console.log(300)
-        return (300)
+        return places["other"]
     }
 }
-// plane_ride_cost()
 
 function rental_car_cost() {
-    let days = prompt("how many days would you like to rent the car")
-    days = Number(days)
-    if (days <= 10) {
-        console.log(days * 40)
-        return (days * 40)
-    } else {
-        console.log((days * 40) * 0.95)
-        return ((days * 40) * 0.95)
+    let num_of_days = prompt("How many days would you like to rent a car?")
+    let cost = Number(num_of_days) * 40
+    if (num_of_days > 10) {
+        cost = cost * 0.95
     }
+    return cost
 }
-// rental_car_cost()
 
-function total_vacation_cost(hotel, plane, car) {
-    let total = 0
-    total += hotel
-    total += plane
-    total += car
-
+function total_vacation_cost() {
+    let total = hotel_cost() + plane_ride_cost() + rental_car_cost()
     console.log(total)
-    return total
 }
-total_vacation_cost(hotel_cost(), plane_ride_cost(), rental_car_cost())
+total_vacation_cost()
