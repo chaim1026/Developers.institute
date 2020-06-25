@@ -65,7 +65,21 @@
 
 let age = [20, 5, 12, 43, 98, 55];
 let sum = 0
-for (sum of age) {
-    sum = sum + parseInt(sum)
+for (item of age) {
+    sum += item
 }
 console.log(sum)
+for (item of age) {
+    if (item % 2 == 0) {
+        console.log(item)
+    } else {
+        continue
+    }
+}
+let largest_num = 0
+for (item of age) {
+    if (item > largest_num) {
+        largest_num = item
+    }
+}
+console.log(largest_num)
