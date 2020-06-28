@@ -13,38 +13,38 @@ function play_the_game() {
             computer_number = Math.floor(Math.random() * 11)
             console.log(user_number)
             console.log(computer_number)
-            return user_number, computer_number
-            test(x, y)
+            test(user_number, computer_number)
         } else if (Number.isInteger(user_number) && user_number < 0 || Number.isInteger(user_number) && user_number > 10) {
             alert("Sorry it’s not a good number, Goodbye")
         } else {
             alert("sorry not a number, goodbye")
         }
     }
-
 }
-play_the_game()
 
 function test(x, y) {
     if (x == y) {
         alert("you won the game")
-    } else if (x > y) {
-        for (let i = 0; i <= 3; i++) {
+    }
+    for (let i = 1; i <= 3; i++) {
+        if (x > y) {
             x = prompt("your number is bigger then the computer _number please guess again ")
             x = parseFloat(x)
             if (x == y) {
                 alert("you won the game")
                 break
+            } else {
+                alert("you did not guess correctly")
             }
-        }
-    } else if (x < y) {
-        x = prompt("your number is smaller then the computer _number please guess again ")
-        let x = parseFloat(x)
-        for (let i = 0; i <= 3; i++)
+        } else if (x < y) {
+            x = prompt("your number is smaller then the computer _number please guess again ")
+            x = parseFloat(x)
             if (x == y) {
                 alert("you won the game")
                 break
+            } else {
+                alert("you did not guess correctly")
             }
+        }
     }
 }
-test(user_number, computer_number)
