@@ -39,3 +39,24 @@ function fade(e) {
     p2.style.fontSize = "20px"
     p2.style.transition = "all 2s"
 }
+
+let div = document.getElementsByTagName("div")[0]
+let table = document.createElement("table")
+div.appendChild(table)
+let row = document.createElement("tr")
+table.appendChild(row)
+let col = document.createElement("td")
+col.style.border = "1px solid green"
+row.appendChild(col)
+let col2 = document.createElement("td")
+col2.style.border = "1px solid green"
+row.appendChild(col2)
+let input1 = document.getElementsByTagName("input")[0]
+input1.oninput = function () {
+    col.innerHTML = this.value
+}
+
+let input2 = document.getElementsByTagName("input")[1]
+input2.oninput = function () {
+    col2.innerHTML = this.value
+}
