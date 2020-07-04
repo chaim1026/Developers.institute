@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <title>Challenge: Mad Libs</title>
-    <script async defer src="day 2 dc2.js"></script>
 </head>
 
 <body>
@@ -24,13 +23,15 @@
     </p>
 
     <script>
+        let noun = document.getElementById("noun")
+        let adjective = document.getElementById("adjective")
+        let person = document.getElementById("person")
         let libButton = document.getElementById('lib-button');
         let libIt = function () {
             let storyDiv = document.getElementById("story");
-            storyDiv.innerHTML =
-                "Pizza was invented by a " + value2 + " chef named " + value3 + " and he always loved to put " +
-                value1 +
-                " on his pizza.";
+            storyDiv.innerHTML = "pizza was first created by a " + adjective.value + " chef by the name of " +
+                person
+                .value + " who loved to put " + noun.value + " on every slice.";
         };
         libButton.addEventListener('click', libIt);
     </script>

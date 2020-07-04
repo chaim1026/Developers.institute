@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Artist</title>
+    <script async defer src="hackathon.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #993333 0%, #ff99cc 33%, #66ffff 66%, #006666 100%);
+        }
+
+        #wrapper {
+            height: 500px;
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            border-style: solid;
+            border-width: 15px;
+            align-content: center;
+            background-color: white;
+        }
+
+        #btns {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .btnstyle {
+            font-size: 25px;
+            margin: 5px;
+            border: none;
+            background: linear-gradient(to bottom, #ccffcc 0%, #ff99cc 100%);
+            border-radius: 8%;
+            color: darkslategray;
+            cursor: pointer;
+        }
+
+        input {
+            text-align: center;
+            font-size: 15px;
+            background-color: whitesmoke;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="headline">WELCOME TO MASTER ARTIST</h1>
+    <div id="btns">
+        <button id="direction" class="btnstyle">Instructtions</button>
+        <button id="background_color" class="btnstyle">Choose a background color</button>
+        <input id="pick_color" type="text" placeholder="Please select a color">
+        <button class="btnstyle" onClick="window.location.reload()">Refresh Canvas</button>
+    </div>
+    <div id="wrapper"></div>
+
+</body>
+
+</html>

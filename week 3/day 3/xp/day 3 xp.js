@@ -1,11 +1,24 @@
+let offset = 0
+
 function myMove() {
     setInterval(function () {
-        document.getElementById("animate").style.right = "1px"
-    }, 1000)
+        if (offset == 350) {
+            myMove2()
+        } else {
+            offset++
+        }
+        document.getElementById("animate").style.left = offset + "px"
+    }, 50)
 }
 
 function myMove2() {
     setInterval(function () {
-        document.getElementById("animate").style.left = "1px"
-    }, 1000)
+        if (offset == 0) {
+            myMove()
+        } else {
+            offset--
+        }
+        document.getElementById("animate").style.right = "0"
+
+    }, 50)
 }
