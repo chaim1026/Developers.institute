@@ -39,7 +39,7 @@ print(store)"""
 
 
 users = [ "Mickey", "Minnie", "Donald","Ariel","Pluto"]
-result_1 = {name: users.index(name) for name in users}
+"""result_1 = {name: users.index(name) for name in users}
 result_2 = {users.index(name): name for name in users}
 sorted_list = sorted(users)
 result_3 = {name: sorted_list.index(name) for name in sorted_list}
@@ -47,4 +47,7 @@ print(result_1)
 print(result_2)
 print(result_3)
 result_4 = {name: users.index(name) for name in users if "i" in name and name[0] in ["M", "P"]}
-print(result_4)
+print(result_4)"""
+
+result_5 = {name: number for number, name in enumerate(users)}
+print(result_5)
