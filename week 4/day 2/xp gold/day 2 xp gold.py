@@ -41,10 +41,26 @@ else:
 
 
 
-students = [("Tom",19,80), ("John",20,90), ("Jony",17,91), ("Jony",17,93), ("Json",21,85)]
+"""students = [("Tom",19,80), ("John",20,90), ("Jony",17,91), ("Jony",17,93), ("Json",21,85)]
 students.sort()
 print(students)
+"""
 
+menu = {
+    "beer": 5,
+    "wine": 7,
+    "water": 2,
+    "coke": 3
+}
+customer_name = input("Whats the customers name:\n")
+waiters_name = input("Whats your name:\n")
+name_of_item = input("What item did the customer want:\n")
+amount_of_items = int(input("How many items were ordered:\n"))
+discount_amount = float(input("What is the discount:\n"))
+cost = menu[name_of_item] * amount_of_items
+if discount_amount > 0:
+    cost = cost * discount_amount
+print(f"{customer_name} your total comes out to {cost}")
 
 
 
