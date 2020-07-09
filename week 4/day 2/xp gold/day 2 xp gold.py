@@ -40,19 +40,25 @@ else:
     print("you guesed wrong")"""
 
 
+
+students = [("Tom",19,80), ("John",20,90), ("Jony",17,91), ("Jony",17,93), ("Json",21,85)]
+students.sort()
+print(students)
+
+
+
+
 """for num in range(1,1000001): 
     print(num)"""
-"""for num in range(1,1000001)names = ["jon", "tom", "omri", "tzivia", "chaim", "alon"]:
 
 
 
-
-numbers = []
+"""numbers = []
 sum = 0
 for num in range(1,1000001):
     numbers += [num]
     sum += num
 print(min(numbers))
 print(max(numbers))
-print(sum)
-"""
+print(sum)"""
+

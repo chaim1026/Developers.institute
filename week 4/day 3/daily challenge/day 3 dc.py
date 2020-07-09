@@ -20,4 +20,3 @@ else:
     for num in letter_list:
         outcome += chr(num)
     print(outcome)
-        
