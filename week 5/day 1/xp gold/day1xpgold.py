@@ -77,5 +77,5 @@ class QuantumParticle():
         self.momentum = random.random()
 
     def __repr__(self):
-        return f"your position is: {self.position}", f"your momentum is: {self.momentum}"
+        return f"your position is: {self.position} your momentum is: {self.momentum}"
     
