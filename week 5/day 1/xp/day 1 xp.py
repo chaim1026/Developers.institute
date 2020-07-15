@@ -93,29 +93,20 @@ class Zoo():
         print(f"goodbye {animal_sold}")
         self.animals.remove(animal_sold)
 
-    def get_letter(self,animal):
-        return ord(animal[0].upper()) - 64
-    
-    def place_animal_in_pen(self, number,animal):
-        if number in self.animals_in_pen:
-            self.animals_in_pen[number].append(animal)
-        else:
-            self.animals_in_pen[number] = [animal]
-        return self.animals_in_pen
-    
     def sort_animals(self):
-        for animal in self.animals:
-            number = self.get_letter(animal)
-            self.place_animal_in_pen(number,animal) 
-        print(self.animals_in_pen)
-
-    def sorted(self):
+        i = 1
         self.animals.sort()
-        print(self.animals)
-        
-
-
-
+        current_letter = self.animals[0][0]
+        self.animals_in_pen[i] = []
+        for animal in self.animals:
+            if animal[0] != current_letter:
+                current_letter = animal[0]
+                i += 1
+                self.animals_in_pen[i] = [animal]
+            else:
+                self.animals_in_pen[i].append(animal)
+        print(self.animals_in_pen)
+            
 
 my_zoo = Zoo("biblical zoo")
 my_zoo.add_animal("lion")
@@ -123,7 +114,6 @@ my_zoo.add_animal("tiger")
 my_zoo.add_animal("turtle")
 my_zoo.add_animal("zebra")
 my_zoo.add_animal("ape")
-my_zoo.sorted()
-#my_zoo.sort_animals()
+my_zoo.sort_animals()
 
 
