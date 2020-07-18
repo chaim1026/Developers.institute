@@ -24,13 +24,13 @@ class MenuManager():
             dish2[item] = info_item
         for dish in self.menu:
             if dish["name"] == dish2["name"]:
-                dish = dish2
-            else:
-                print("you have no dish by that name")
+                dish.update(dish2)
+                return dish
+        print("you have no dish by that name")
 
     def remove_item(self,name):
         for dish in self.menu:
             if name == dish["name"]:
                 self.menu.remove(dish)
-            else:
-                print("you have no such dish")
+                return
+        print("you have no such dish")
