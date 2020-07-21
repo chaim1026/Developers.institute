@@ -1,7 +1,8 @@
-"""class Currency():
+class Currency():
     def __init__(self,value,currency):
         self.value = float(value)
         self.currency = currency
+        self.new_value = 0
 
     def __repr__(self):
         return f"you have {self.value}{self.currency}"
@@ -12,61 +13,69 @@
     def __int__(self):
         return int(self.value)
 
-    def __add__(self,another_currency):
-        if self.currency == another_currency:
+    def __add__(self,other):
+        if self.currency == other.currency:
             self.value += 5
-            return self.value
+            self.new_value = self.value + other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __iadd__(self,another_currency):
-        if self.currency == another_currency:
+    def __iadd__(self,other):
+        if self.currency == other.currency:
             self.value += 5
-            return self.value
+            self.new_value = self.value + other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __sub__(self,another_currency):
-        if self.currency == another_currency:
+    def __sub__(self,other):
+        if self.currency == other.currency:
             self.value -= 5
-            return self.value
+            self.new_value = self.value - other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __isub__(self,another_currency):
-        if self.currency == another_currency:
+    def __isub__(self,other):
+        if self.currency == other.currency:
             self.value -= 5
-            return self.value
+            self.new_value = self.value - other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __mul__(self,another_currency):
-        if self.currency == another_currency:
+    def __mul__(self,other):
+        if self.currency == other.currency:
             self.value *= 5
-            return self.value
+            self.new_value = self.value * other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __imul__(self,another_currency):
-        if self.currency == another_currency:
+    def __imul__(self,other):
+        if self.currency == other.currency:
             self.value *= 5
-            return self.value
+            self.new_value = self.value * other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __div__(self,another_currency):
-        if self.currency == another_currency:
+    def __div__(self,other):
+        if self.currency == other.currency:
             self.value /= 5
-            return self.value
+            self.new_value = self.value / other.value
+            return self.value, self.new_value
         else:
             raise ValueError("not the same currency")
 
-    def __idiv__(self,another_currency):
-        if self.currency == another_currency:
+    def __idiv__(self,other):
+        if self.currency == other.currency:
             self.value /= 5
-            return self.value
+            self.new_value = self.value / other.value
+            return self.value, self.new_value
         else:
-            raise ValueError("not the same currency")"""
+            raise ValueError("not the same currency")
 
 
 
