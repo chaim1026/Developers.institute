@@ -1,4 +1,4 @@
-class Currency():
+"""class Currency():
     def __init__(self,value,currency):
         self.value = float(value)
         self.currency = currency
@@ -75,7 +75,7 @@ class Currency():
             self.new_value = self.value / other.value
             return self.value, self.new_value
         else:
-            raise ValueError("not the same currency")
+            raise ValueError("not the same currency")"""
 
 
 
