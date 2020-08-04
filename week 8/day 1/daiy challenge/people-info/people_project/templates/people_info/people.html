@@ -1,0 +1,14 @@
+{% extends 'people_info/base.html' %}
+
+{% block content %}
+
+    {% for person in all %}
+        <ul>
+            {% for x, y in person.items %}
+                <li>{{x}}: {{y}}</li>
+            {% endfor %}
+            <a href="{% url 'person_id' person.id %}">GO TO ID</a>
+        </ul>
+    {% endfor %}
+
+{% endblock content %}

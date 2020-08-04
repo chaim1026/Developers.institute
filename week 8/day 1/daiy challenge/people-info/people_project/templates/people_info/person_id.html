@@ -1,0 +1,11 @@
+{% extends 'people_info/base.html' %}
+
+{% block content %}
+
+<ul>
+    {% for x, y in person.items %}
+        <li>{{x}}: {{y}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
